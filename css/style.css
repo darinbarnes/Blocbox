@@ -44,10 +44,63 @@ p{
   min-height: 1px;
   margin: 0 2% 20px;
 }
+@media (min-width: 320px) {
+  .container {
+    width: 307px;
+  }
+  #logo-mobile {
+    display: block;
+  }
+  #logo-desktop {
+    display: none;
+  }
+  header .hero h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 20px 0 0;
+  }
+  header .hero p {
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    display: none;
+    margin: 3em auto 0;
+  }
+  header .break {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
-  }
+    }
+    #logo-mobile {
+      display: none;
+    }
+    #logo-desktop {
+      display: block;
+    }
+    header .hero h1 {
+      font-size: 3em;
+      font-weight: normal;
+      margin: 95px 0 0;
+    }
+    header .hero p {
+      font-size: 1.375em;
+      line-height: 1.375em;
+      font-weight: 100;
+      margin: 10px 0 40px;
+    }
+    header .hero img {
+      display: block;
+      margin: 3em auto 0;
+    }
+    header .break {
+      display: inline;
+    }
 }
 @media (min-width: 992px) {
   .container {
@@ -107,21 +160,6 @@ header .hero {
   text-align: center;
   display: block;
   position: relative;
-}
-header .hero h1 {
-  font-size: 3em;
-  font-weight: normal;
-  margin: 95px 0 0;
-}
-header .hero p {
-  font-size: 1.375em;
-  line-height: 1.375em;
-  font-weight: 100;
-  margin: 10px 0 40px;
-}
-header .hero img {
-  display: block;
-  margin: 3em auto 0;
 }
 
 /* BUTTONS */
