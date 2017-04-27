@@ -315,6 +315,10 @@ header .hero {
     header .break {
       display: inline;
     }
+    .testimonials li.stagger {
+      position: relative;
+      top: 20px
+    }
 }
 @media (min-width: 992px) {
   .container {
