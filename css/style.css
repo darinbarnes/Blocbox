@@ -44,6 +44,20 @@ p{
   min-height: 1px;
   margin: 0 2% 20px;
 }
+.logo-header {
+  width: 26%;
+  float: left;
+  position: inline-block;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+.nav-header {
+  width: 66%;
+  float: right;
+  position: inline-block;
+  min-height: 1px;
+  margin: 0 0 20px 4%;
+}
 .container {
   width: 307px;
 }
@@ -80,6 +94,7 @@ header {
   color: #388CA1;
   background: #F9F8F6;
   background-image: linear-gradient(180deg, #F9F8F6 0%, #EFEDE8 100%);
+  padding-bottom: 45px;
 }
 header nav {
   padding:1em 0;
@@ -93,7 +108,7 @@ header nav ul {
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 header nav ul > li.btn-outline {
   padding: 10px 15px;
@@ -131,6 +146,7 @@ header .hero {
   text-align: center;
   display: block;
   position: relative;
+  background-color: #D7E8EC;
 }
 .benefits ul {
   margin: 0 auto;
@@ -147,6 +163,9 @@ header .hero {
   vertical-align: middle;
 }
 .benefits h2 {
+  color: #388CA1;
+}
+.benefits p {
   color: #388CA1;
 }
 
@@ -172,12 +191,12 @@ header .hero {
   padding: 0 15px 15px;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
-  min-height: 439px;
+  min-height: 400px;
   position: relative;
   margin-top: 25px;
 }
 .box.middle {
-  min-height: 485px;
+  min-height: 450px;
   margin-top: 0px;
 }
 .box h3 {
@@ -233,12 +252,18 @@ header .hero {
 .testimonials {
   padding: 4em 0;
   text-align: center;
+  background-color: #D7E8EC;
 }
 .testimonials h2 {
   color: #388CA1;
 }
 .testimonials ul li {
   list-style-type: none;
+  right: 20px;
+}
+.testimonials li.stagger {
+  position: relative;
+  left: 20px;
 }
 .testimonials blockquote {
   color: #FFFFFF;
@@ -277,20 +302,25 @@ header .hero {
   text-align: left;
   font-size: 0.8125em;
   margin-top: 30px;
+  color: #388CA1;
+}
+.testimonials p {
+  color: #388CA1;
 }
 
 /* CALL TO ACTION */
 .call-to-action {
   padding: 4em 0;
   text-align: center;
-}
-.call-to-action h2 {
   color: #388CA1;
 }
-.call-to-action p {
-  padding-bottom: 15px;
+.call-to-action .container h1 {
+  color: #388CA1;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 20px 0 0;
 }
-.call-to-action .btn {
+.call-to-action p {
   padding-bottom: 15px;
 }
 .call-to-action {
@@ -304,15 +334,24 @@ footer {
   background-image: linear-gradient(to top, #388CA1 0%, #388CA1 50%, #388CA1 50%, #388CA1 100%);
   color: #FFFFFF;
   height: 150px;
-  position:relative;
+  position: relative;
   overflow: hidden;
   z-index: 0;
 }
-footer p, footer nav ul {
+footer p {
   font-size: 0.875em;
   font-weight: 100;
   text-align: center;
-  margin: 10px auto 0;
+  margin: 20px 0 0;
+  padding-left: 0;
+}
+footer nav ul {
+  font-size: 0.875em;
+  font-weight: 100;
+  text-align: center;
+  margin: 10px 20px 0;
+  padding-left: 0;
+  bottom: 20px;
 }
 footer nav ul li {
   list-style-type: none;
@@ -322,22 +361,22 @@ footer nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
 }
-footer .link-block{
-  text-align: center;
+footer .left-footer-block {
+  margin: 0 2% 0;
 }
 footer .right-footer-block {
   background-color: transparent;
-  bottom: auto;
+  bottom: 5px;
 }
 footer .logo {
-  padding: 2.35em 0;
-  margin: 0 auto;
+  padding: 0 0 2em;
+  margin: 0 auto 1em;
   display: block;
 }
 
 /* QUERIES */
 @media (min-width: 768px) {
-  .container {
+    .container {
     width: 750px;
     }
     #logo-mobile {
@@ -346,12 +385,18 @@ footer .logo {
     #logo-desktop {
       display: block;
     }
+    header {
+      padding-bottom: 0;
+    }
     header nav {
       text-align: left;
     }
     header nav ul {
       float: right;
       text-align: right;
+    }
+    header nav ul > li {
+      margin: 0 15px;
     }
     header .hero h1 {
       font-size: 3em;
@@ -371,9 +416,26 @@ footer .logo {
     header .break {
       display: inline;
     }
+    .testimonials blockquote:after {
+      top: 100%;
+      left: 4.5%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color: #388CA1;
+      border-width: 10px;
+      margin-left: -10px;
+     }
+    .testimonials ul li {
+      list-style-type: none;
+      right: 0px;
+    }
     .testimonials li.stagger {
       position: relative;
-      top: 20px
+      left: 0px;
     }
     footer{
      background-color: #3498DB;
@@ -381,16 +443,14 @@ footer .logo {
         #388CA1 0%, #388CA1 33.3333%, #388CA1 33.3333%, #388CA1 100%);
      height: 100px;
     }
-    footer p, footer nav ul{
-    padding: 2em 0;
-    text-align: left;
+    footer {
+      height: 150px;
     }
     footer .right-footer-block {
-    background-color: #388CA1;
+      background-color: transparent;
+      bottom: 0;
     }
-    footer .logo{
-    padding: 2em 0 2em 1.5em;
-    }
+
 }
 @media (min-width: 992px) {
   .container {
@@ -404,6 +464,42 @@ footer .logo {
   }
   .one-fourth {
     width: 21%;
+  }
+  .testimonials blockquote:after {
+    top: 100%;
+    left: 13%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #388CA1;
+    border-width: 10px;
+    margin-left: -10px;
+   }
+  .testimonials li.stagger {
+    position: relative;
+    top: 20px;
+    left: 0px;
+  }
+  footer {
+    height: 100px;
+  }
+  footer p, footer nav ul{
+  padding: 2em 0;
+  text-align: left;
+  margin: 10px 0 0;
+  }
+  footer .right-footer-block {
+  background-color: #388CA1;
+  bottom: 0px;
+  }
+  footer .logo{
+  padding: 30px 0 30px 1.5em;
+  }
+  header {
+  padding-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
