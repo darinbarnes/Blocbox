@@ -389,13 +389,13 @@ footer .logo {
   display: block;
 }
 .left-nav .site-logo {
-  padding: 40px 0;
+  padding: 40px 0 40px 10%;
   background: #EFEDE8;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 .left-nav .items {
-  padding: 0 6%;
+  padding: 0 10%;
 }
 .left-nav .items p {
   font-weight: 600;
@@ -478,6 +478,7 @@ footer .logo {
 }
 .content .header > a {
   float: left;
+  padding-bottom: 40px;
 }
 .content-item {
   width: 96%;
@@ -496,7 +497,7 @@ footer .logo {
 }
 .link {
   display: block;
-  height: 165px;
+  height: 230px;
   background: #FFFFFF;
   box-shadow: 0px 5px 5px 0px rgba(239,237,232,1);
   position: relative;
@@ -504,13 +505,7 @@ footer .logo {
   padding: 10px;
 }
 .item-box > img {
-  position: absolute;
-  height: 100%;
-  width: auto;
-  top: 0;
-  left: 0;
-  right: 10px;
-  padding: 10px 10px 10px 10px;
+  max-width: 100%;
 }
 .item-box h2 {
   font-family: "Nunito", Helvetica, Arial, sans-serif;
