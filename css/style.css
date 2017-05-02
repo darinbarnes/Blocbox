@@ -417,13 +417,16 @@ footer .logo {
   text-decoration: none;
   font-weight: 100;
 }
+.left-nav .items .active {
+  background-color: #388CA1;
+}
 .left-nav .items ul li a i {
   width: 16px;
   text-align: center;
   margin-right: 8px;
 }
 
-/* LEFT NAVBAR SETTINGS */
+/* LEFT NAVBAR ACCOUNT SETTINGS */
 .left-nav .settings {
   position: absolute;
   background: #EFEDE8;
