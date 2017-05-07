@@ -15,7 +15,11 @@
   float: left;
   display: inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-trigger {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+}
 .dropit .dropit-submenu {
   position: absolute;
   top: 100%;
@@ -58,4 +62,15 @@
   text-decoration: none;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-weight:Regular;
+ }
+ .left-nav .settings .settings-menu .dropit .dropit-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0; /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  min-width: 100px;
+  list-style: none;
+ 	padding: 20px;
+ 	margin: 500px 0 0;
  }

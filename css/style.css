@@ -458,6 +458,7 @@ footer .logo {
 
 /* LEFT NAVBAR ACCOUNT SETTINGS */
 .left-nav .settings {
+  color: #333333;
   position: absolute;
   background: #EFEDE8;
   width: 100%;
@@ -480,7 +481,7 @@ footer .logo {
   font-weight: 400;
   margin: 0 0 0 10px;
 }
-.left-nav .settings a {
+.left-nav .settings .settings-menu {
   color: #333333;
   text-decoration: none;
   text-align: right;
