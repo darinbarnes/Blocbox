@@ -440,21 +440,29 @@ footer .logo {
 }
 .left-nav .items ul li {
   list-style-type: none;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 .left-nav .items ul li a {
   color: #333333;
   text-decoration: none;
   font-weight: 100;
+  padding-left: 10px;
 }
 .left-nav .items .active {
   background-color: #388CA1;
+  padding: 2px 0;
+  border-radius: 50px;
+}
+.left-nav .items ul li.active a {
+  color: #FFFFFF;
+  font-weight: regular;
 }
 .left-nav .items ul li a i {
   width: 16px;
   text-align: center;
   margin-right: 8px;
 }
+
 
 /* LEFT NAVBAR ACCOUNT SETTINGS */
 .left-nav .settings {
@@ -489,6 +497,7 @@ footer .logo {
   margin-right: 10px;
   margin-top: 8px;
 }
+
 
 /* CONTENT */
 .content {
@@ -572,7 +581,7 @@ footer .logo {
 /* QUERIES */
 @media (min-width: 460px) {
   .content {
-    padding: 1.5em 1%;
+    padding: 60px 1%;
     float: right;
     width: 90%;
     position: relative;
